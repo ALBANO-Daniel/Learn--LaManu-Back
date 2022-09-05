@@ -1,0 +1,18 @@
+#exe-list {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    padding: 1rem;
+}
+#exe-list li{
+    padding: 1rem;
+    border: 1px black solid;
+}
+div{
+    display: none;
+    background-color: antiquewhite;
+    padding: 1rem;
+}
+body{
+    background-color: aliceblue;
+}
