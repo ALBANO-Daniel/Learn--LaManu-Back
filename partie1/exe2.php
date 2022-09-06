@@ -2,6 +2,6 @@
 $firstname = 'Roger';
 $lastname = 'Blunt';
 $age = 12;
-// settype($age, "integer");
+// settype($age, "int");
 
-echo $firstname . "<br>" . $lastname . "<br>" . $age . "<br>";
+echo $firstname . '<br>' . $lastname . '<br>' . $age . '<br>';
