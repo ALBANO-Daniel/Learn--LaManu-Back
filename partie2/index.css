@@ -1,7 +1,11 @@
 body{
-    background-color: aliceblue;
+    background-color: seashell;
     font-size: 22px;
     line-height: 2rem;
+}
+nav{
+    border-bottom: #2f2f2f 1px solid;
+    width: 100%;
 }
 div{
     display: none;

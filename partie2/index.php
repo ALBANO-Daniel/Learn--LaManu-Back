@@ -11,7 +11,7 @@
 
 <body>
     <nav>
-        <h2>exercices</h2>
+        <h2>exercices :</h2>
         <ul id="exe-list">
             <li>1</li>
             <li>2</li>
@@ -122,72 +122,176 @@
 
     <div id='4' class="exe">
         <h3>Exercice 4 :</h3>
-        <p?>
+        <p>
             L'échelle de Richter est un outil de mesure qui permet de définir la magnitude de moment d'un tremblement de terre. Cette échelle va de 1 à 9.
             Créer une variable magnitude. Selon la valeur de magnitude, afficher la phrase correspondante.
+        </p>
+        <table>
+            <thead>
+                <tr>
+                    <th scope="col">Magnitude</th>
+                    <th scope="col">Phrase</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="text-align: center;">1</td>
+                    <td>Micro-séisme impossible à ressentir.</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">2</td>
+                    <td>Micro-séisme impossible à ressentir mais enregistrable par les sismomètres.</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">3</td>
+                    <td>Ne cause pas de dégats mais commence à pouvoir être légèrement ressenti.</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">4</td>
+                    <td>Séisme capable de faire bouger des objets mais ne causant généralement pas de dégats.</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">5</td>
+                    <td>Séisme capable d'engendrer des dégats importants sur de vieux bâtiments ou bien des bâtiments présentants des défauts de construction. Peu de dégats sur des bâtiments modernes.</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">6</td>
+                    <td>Fort séisme capable d'engendrer des destructions majeures sur une large distance (180 km) autour de l'épicentre.</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">7</td>
+                    <td>Séisme capable de destructions majeures à modérées sur une très large zone en fonction de la distance.</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">8</td>
+                    <td>Séisme capable de destructions majeures sur une très large zone de plusieurs centaines de kilomètres.</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">9</td>
+                    <td>Séisme capable de tout détruire sur une très vaste zone.</td>
+                </tr>
+            </tbody>
+        </table>
+        <h4>Execution : </h4>
+        <p class='execution'>
+            <?php
+            include("exe4.php");
+            ?>
+        </p>
+        <div class='code'>
+            <h4> Code : </h4>
+            <p>
+                <img src="./img/exe4.jpg" alt="code source sur vscode">
             </p>
-            <table>
-                <thead>
-                    <tr>
-                        <th scope="col">Magnitude</th>
-                        <th scope="col">Phrase</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td style="text-align: center;">1</td>
-                        <td>Micro-séisme impossible à ressentir.</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">2</td>
-                        <td>Micro-séisme impossible à ressentir mais enregistrable par les sismomètres.</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">3</td>
-                        <td>Ne cause pas de dégats mais commence à pouvoir être légèrement ressenti.</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">4</td>
-                        <td>Séisme capable de faire bouger des objets mais ne causant généralement pas de dégats.</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">5</td>
-                        <td>Séisme capable d'engendrer des dégats importants sur de vieux bâtiments ou bien des bâtiments présentants des défauts de construction. Peu de dégats sur des bâtiments modernes.</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">6</td>
-                        <td>Fort séisme capable d'engendrer des destructions majeures sur une large distance (180 km) autour de l'épicentre.</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">7</td>
-                        <td>Séisme capable de destructions majeures à modérées sur une très large zone en fonction de la distance.</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">8</td>
-                        <td>Séisme capable de destructions majeures sur une très large zone de plusieurs centaines de kilomètres.</td>
-                    </tr>
-                    <tr>
-                        <td style="text-align: center;">9</td>
-                        <td>Séisme capable de tout détruire sur une très vaste zone.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <h4>Execution : </h4>
-            <p class='execution'>
-                <?php
-                include("exe4.php");
-                ?>
-            </p>
-            <div class='code'>
-                <h4> Code : </h4>
-                <p> 
-                  <img src="./img/exe4.jpg" alt="code source sur vscode">
-                </p>
-            </div>
+        </div>
     </div>
 
+    <div id='5' class="exe">
+        <h3>Exercice 5 :</h3>
+        <p>Traduire ce code avec des if et des else : <br>
+            < ?php <br>
+                echo ($gender != 'Homme') ? "C'est une développeuse !!!" : "C'est un développeur !!!"; <br>
+                ?>
+        </p>
+        <h4>Execution : </h4>
+        <p class='execution'>
+            <?php
+            include("exe5.php");
+            ?>
+        </p>
+        <div class='code'>
+            <h4> Code : </h4>
+            <p>
+                < ?php <br>
 
+                    $original = "(\$gender != 'Homme') ? 'C'est une développeuse !!!' : C'est un développeur !!!';"; <br><br>
 
+                    $translated = "if(\$gender != 'Homme) { echo 'C'est une développeuse !!!'; } else { echo 'C\'est un développeur !!!'; }" ;<br><br>
+
+                    echo 'Before : ' . $original . '&lt;br>' . 'After : ' . $translated ;<br>
+            </p>
+        </div>
+    </div>
+
+    <div id='6' class="exe">
+        <h3>Exercice 6 :</h3>
+        <p>Traduire ce code avec des if et des else : <br><br>
+            < ?php <br>
+                echo ($age >= 18) ? 'Tu es majeur' : 'Tu n\'es pas majeur';<br>
+                ?><br>
+        </p>
+        <h4>Execution : </h4>
+        <p class='execution'>
+            <?php
+            include("exe6.php");
+            ?>
+        </p>
+        <div class='code'>
+            <h4> Code : </h4>
+            <p>
+                < ?php <br>
+
+                    $original = " echo (\$age >= 18) ? 'Tu es majeur' : 'Tu n\'es pas majeur' "; <br><br>
+
+                    $translated = "if(\$age >= 18) { echo 'Tu es majeur'; } else { echo 'Tu n\'es pas majeur'; }" ;<br><br>
+
+                    echo 'Before : ' . $original . '&lt;br>' . 'After : ' . $translated ;<br>
+            </p>
+        </div>
+    </div>
+
+    <div id='7' class="exe">
+        <h3>Exercice 7 :</h3>
+        <p>Traduire ce code avec des if et des else : <br>
+            < ?php <br>
+                echo ($isOk == false) ? 'c\'est pas bon !!!' : 'c\'est ok !!'; <br>
+                ?>
+        </p>
+        <h4>Execution : </h4>
+        <p class='execution'>
+            <?php
+            include("exe7.php");
+            ?>
+        </p>
+        <div class='code'>
+            <h4> Code : </h4>
+            <p>
+                < ?php <br>
+
+                    $original = "echo ($isOk == false) ? 'c\'est pas bon !!!' : 'c\'est ok !!';"; <br><br>
+
+                    $translated = "if($isOk == false) { echo 'c\'est pas bon !!!'; } else { echo 'c\'est ok !!'; }" ;<br><br>
+
+                    echo 'Before : ' . $original . '&lt;br>' . 'After : ' . $translated ;<br>
+            </p>
+        </div>
+    </div>
+    <div id='8' class="exe">
+        <h3>Exercice 8 :</h3>
+        <p>Traduire ce code avec des if et des else :<br>
+            < ?php<br>
+                echo ($isOk) ? 'c'est ok !!' : 'c'est pas bon !!!';<br>
+                ?>
+        </p>
+        <h4>Execution : </h4>
+        <p class='execution'>
+            <?php
+            include("exe8.php");
+            ?>
+        </p>
+        <div class='code'>
+            <h4> Code : </h4>
+            <p>
+                < ?php <br>
+
+                    $original = "echo ($isOk) ? 'c'est ok !!' : 'c'est pas bon !!!';"; <br><br>
+
+                    $translated = "if($isOk) { echo 'c'est ok !!'; } else { echo 'c'est pas bon !!!'; }";<br><br>
+
+                    echo 'Before : ' . $original . '&lt;br>' . 'After : ' . $translated ;<br>
+            </p>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 

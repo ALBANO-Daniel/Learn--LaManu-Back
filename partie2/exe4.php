@@ -30,4 +30,6 @@ switch ($magnitude) {
     case 9:
         echo 'Séisme capable de tout détruire sur une très vaste zone.';
         break;
+    default:
+        echo 'Magnitude dois etre entre 1 et 9.';
 }

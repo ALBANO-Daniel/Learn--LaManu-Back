@@ -4,5 +4,8 @@
 ?> -->
 <?php
 
-$original = "(\$gender != 'Homme') ? 'C\'est une développeuse !!!' : 'C\'est un développeur !!!';";
-$translated = ""
+$original = "(\$gender != 'Homme') ? C'est une développeuse !!!' : C'est un développeur !!!';";
+
+$translated = "if(\$gender != 'Homme) { echo C'est une développeuse !!!'; } else { echo C'est un développeur !!!'; }" ;
+
+echo 'Before : ' . $original . '<br>' . 'After : ' . $translated ;

@@ -15,4 +15,3 @@ if ($age < 18){
         echo 'Vous êtes une femme et vous êtes majeure';
     }
 }
-
