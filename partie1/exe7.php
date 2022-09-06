@@ -1,7 +1,7 @@
 <?php
 
 $firstname = 'Louise';
-$lastname = 'Lecroix';
+$lastname = 'LECROIX';
 $age = 45;
 
-echo 'Bonjour ' . $lastname . $firstname . ', tu as ' . $age . ' ans.';
+echo 'Bonjour ' . $lastname . ' ' . $firstname . ', tu as ' . $age . ' ans.';

@@ -1,0 +1,13 @@
+nav{
+    display: flex;
+    background-color: #555;
+    height: 100vh;
+}
+nav a {
+    background-color: #7f7f7f;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 1rem;
+    height: fit-content;
+}
