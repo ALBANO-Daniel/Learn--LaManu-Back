@@ -23,7 +23,6 @@
             <li>8</li>
         </ul>
     </nav>
-
     <div id='0' class="exe">
         <!-- hidden div just to help indexation ref. on the arrays functions -->
     </div>
@@ -50,7 +49,6 @@
             </p>
         </div>
     </div>
-
     <div id='2' class="exe">
         <h3>Exercice 2 :</h3>
         <p>Créer deux variables. Initialiser la première à 0 et la deuxième avec un nombre compris en 1 et 100.
@@ -78,7 +76,6 @@
             </p>
         </div>
     </div>
-
     <div id='3' class="exe">
         <h3>Exercice 3 :</h3>
         <p>Créer deux variables. Initialiser la première à 100 et la deuxième avec un nombre compris en 1 et 100.
@@ -106,7 +103,6 @@
             </p>
         </div>
     </div>
-
     <div id='4' class="exe">
         <h3>Exercice 4 :</h3>
         <p>
@@ -133,11 +129,10 @@
             </p>
         </div>
     </div>
-
     <div id='5' class="exe">
         <h3>Exercice 5 :</h3>
         <p>
-
+            En allant de 1 à 15 avec un pas de 1, afficher le message On y arrive presque.
         </p>
         <h4>Execution : </h4>
         <p class='execution'>
@@ -148,23 +143,15 @@
         <div class='code'>
             <h4> Code : </h4>
             <p>
-                < ?php <br>
-
-                    $original = "(\$gender != 'Homme') ? 'C'est une développeuse !!!' : C'est un développeur !!!';"; <br><br>
-
-                    $translated = "if(\$gender != 'Homme) { echo 'C'est une développeuse !!!'; } else { echo 'C\'est un développeur !!!'; }" ;<br><br>
-
-                    echo 'Before : ' . $original . '&lt;br>' . 'After : ' . $translated ;<br>
+                < ?php for($i=1 ; $i<=15; $i++){<br>
+                    echo 'On y arrive presque.';<br>
+                    }
             </p>
         </div>
     </div>
-
     <div id='6' class="exe">
         <h3>Exercice 6 :</h3>
-        <p>Traduire ce code avec des if et des else : <br><br>
-            < ?php <br>
-                echo ($age >= 18) ? 'Tu es majeur' : 'Tu n\'es pas majeur';<br>
-                ?><br>
+        <p>En allant de 20 à 0 avec un pas de 1, afficher le message C'est presque bon.
         </p>
         <h4>Execution : </h4>
         <p class='execution'>
@@ -175,23 +162,16 @@
         <div class='code'>
             <h4> Code : </h4>
             <p>
-                < ?php <br>
-
-                    $original = " echo (\$age >= 18) ? 'Tu es majeur' : 'Tu n\'es pas majeur' "; <br><br>
-
-                    $translated = "if(\$age >= 18) { echo 'Tu es majeur'; } else { echo 'Tu n\'es pas majeur'; }" ;<br><br>
-
-                    echo 'Before : ' . $original . '&lt;br>' . 'After : ' . $translated ;<br>
-            </p>
+                < ?php<br>
+                    for($i=0; $i &lt;21; $i--){<br>
+                    echo 'C\'est presque bon.';<br>
+                    }
+            </p><br>
         </div>
     </div>
-
     <div id='7' class="exe">
         <h3>Exercice 7 :</h3>
-        <p>Traduire ce code avec des if et des else : <br>
-            < ?php <br>
-                echo ($isOk == false) ? 'c\'est pas bon !!!' : 'c\'est ok !!'; <br>
-                ?>
+        <p>En allant de 1 à 100 avec un pas de 15, afficher le message On tient le bon bout.
         </p>
         <h4>Execution : </h4>
         <p class='execution'>
@@ -202,22 +182,17 @@
         <div class='code'>
             <h4> Code : </h4>
             <p>
-                < ?php <br>
-
-                    $original = "echo ($isOk == false) ? 'c\'est pas bon !!!' : 'c\'est ok !!';"; <br><br>
-
-                    $translated = "if($isOk == false) { echo 'c\'est pas bon !!!'; } else { echo 'c\'est ok !!'; }" ;<br><br>
-
-                    echo 'Before : ' . $original . '&lt;br>' . 'After : ' . $translated ;<br>
+                < ?php<br>
+                    for($i=1; $i >= 100; $i+=15){<br>
+                    echo 'On tient le bon bout.';<br>
+                    }
             </p>
         </div>
     </div>
     <div id='8' class="exe">
         <h3>Exercice 8 :</h3>
-        <p>Traduire ce code avec des if et des else :<br>
-            < ?php<br>
-                echo ($isOk) ? 'c'est ok !!' : 'c'est pas bon !!!';<br>
-                ?>
+        <p>
+            En allant de 200 à 0 avec un pas de 12, afficher le message Enfin !!!!.
         </p>
         <h4>Execution : </h4>
         <p class='execution'>
@@ -228,13 +203,10 @@
         <div class='code'>
             <h4> Code : </h4>
             <p>
-                < ?php <br>
-
-                    $original = "echo ($isOk) ? 'c'est ok !!' : 'c'est pas bon !!!';"; <br><br>
-
-                    $translated = "if($isOk) { echo 'c'est ok !!'; } else { echo 'c'est pas bon !!!'; }";<br><br>
-
-                    echo 'Before : ' . $original . '&lt;br>' . 'After : ' . $translated ;<br>
+                < ?php<br>
+                    for($i=200; $i<=0; $i-=12){<br>
+                        echo 'Enfin !!!!';<br>
+                        }
             </p>
         </div>
     </div>
