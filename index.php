@@ -14,7 +14,7 @@
     <nav>
         <a href="./partie1/index.php">PARTIE 1</a>
         <a href="./partie2/index.php">PARTIE 2</a>
-        <a href="./partie1/index.php">PARTIE 3</a>
+        <a href="./partie3/index.php">PARTIE 3</a>
     </nav>
 </body>
 </html>

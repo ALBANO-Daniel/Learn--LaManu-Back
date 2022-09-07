@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>PHP - partie 3</title>
 </head>
 
 <body>
@@ -21,19 +21,18 @@
             <li>6</li>
             <li>7</li>
             <li>8</li>
-            <!-- ADD NEW EXE HERE with same Syntax -->
         </ul>
     </nav>
 
-
-    <!-- ADD NEW EXE HERE With same Syntax -->
     <div id='0' class="exe">
         <!-- hidden div just to help indexation ref. on the arrays functions -->
     </div>
     <div id='1' class="exe">
         <h3>Exercice 1 :</h3>
-        <p>Créer une variable age et l'initialiser avec une valeur.
-            Si l'âge est supérieur ou égale à 18, afficher Vous êtes majeur. Dans le cas contraire, afficher Vous êtes mineur.</p>
+        <p>Créer une variable et l'initialiser à 0.
+            Tant que cette variable n'atteint pas 10, il faut :<br>
+            - l'afficher<br>
+            - l'incrementer</p>
         <h4>Execution : </h4>
         <p class='execution'>
             <?php
@@ -44,23 +43,21 @@
             <h4> Code : </h4>
             <p>
                 < ?php <br>
-                    $age=17; <br>
-                    if ($age> 17){ <br>
-                    echo 'Vous etes majeur.'; <br>
-                    } else { <br>
-                    echo 'Vous etes mineur.'; <br>
-                    } <br>
-                    ?>
+                    $i = 0; <br>
+                    while ($i <= 10) {<br>
+                        echo $i++ . ' ';<br>
+                        }
             </p>
         </div>
     </div>
 
     <div id='2' class="exe">
         <h3>Exercice 2 :</h3>
-        <p>Créer une variable isEasy de type booléan et l'initialiser avec une valeur.
-            Afficher C'est facile !! si c'est vrai. Dans le cas contraire afficher C'est difficile !!!.
-
-            Bonus : L'écrire de deux manières différentes.
+        <p>Créer deux variables. Initialiser la première à 0 et la deuxième avec un nombre compris en 1 et 100.
+            Tant que la première variable n'est pas supérieure à 20 : <br>
+            - multiplier la première variable avec la deuxième<br>
+            - afficher le résultat<br>
+            - incrementer la première variable<br>
         </p>
         <h4>Execution : </h4>
         <p class='execution'>
@@ -71,25 +68,24 @@
         <div class='code'>
             <h4> Code : </h4>
             <p>
-                < ?php <br>
-                    $isEasy=true; <br>
-                    if($isEasy){<br>
-                    echo 'C\' est facile !!'; <br> } else { <br> echo 'C\' est difficile !!!'; }
+                < ?php<br>
+                    $i = 0;<br>
+                    $v = 57;<br>
+                    while ($i <= 20) {<br>
+                        echo $i*$v . ' ';<br>
+                        $i++;<br>
+                        }
             </p>
         </div>
     </div>
 
     <div id='3' class="exe">
         <h3>Exercice 3 :</h3>
-        <p>Créer deux variables age et gender. La variable gender peut prendre comme valeur :<br><br>
-            Homme<br>
-            Femme<br><br>
-            En fonction de l'âge et du genre afficher la phrase correspondante :<br><br>
-            Vous êtes un homme et vous êtes majeur<br>
-            Vous êtes un homme et vous êtes mineur<br>
-            Vous êtes une femme et vous êtes majeure<br>
-            Vous êtes une femme et vous êtes mineure<br><br>
-            Gérer tous les cas.
+        <p>Créer deux variables. Initialiser la première à 100 et la deuxième avec un nombre compris en 1 et 100.
+            Tant que la première variable n'est pas inférieure ou égale à 10 : <br>
+            - multiplier la première variable avec la deuxième<br>
+            - afficher le résultat<br>
+            - décrémenter la première variable<br>
         </p>
         <h4>Execution : </h4>
         <p class='execution'>
@@ -100,22 +96,13 @@
         <div class='code'>
             <h4> Code : </h4>
             <p>
-                < ?php <br>
-                    $age=18; <br>
-                    $gender='Homme' ; <br>
-                    if ($age < 18){ <br>
-                        &nbsp; if( $gender=='Homme'){ <br>
-                        &nbsp; &nbsp; &nbsp; echo 'Vous êtes un homme et vous êtes mineur' ; <br>
-                        &nbsp; } else { <br>
-                        &nbsp; &nbsp; &nbsp;echo 'Vous êtes une femme et vous êtes mineure' ;<br>
-                        &nbsp; &nbsp;}<br>
-                        } else { <br>
-                        &nbsp; if( $gender=='Homme' ){ <br>
-                        &nbsp; &nbsp; &nbsp; echo 'Vous êtes un homme et vous êtes majeur' ;<br>
-                        &nbsp; } else { <br>
-                        &nbsp; &nbsp; &nbsp;echo 'Vous êtes une femme et vous êtes majeure' ; <br>
-                        &nbsp; &nbsp;}<br>
-                        }
+                < ?php<br>
+                    $i = 100;<br>
+                    $v = 57;<br>
+                    while ($i >= 10) {<br>
+                    echo $i*$v . ' ';<br>
+                    $i--;<br>
+                    }
             </p>
         </div>
     </div>
@@ -123,55 +110,11 @@
     <div id='4' class="exe">
         <h3>Exercice 4 :</h3>
         <p>
-            L'échelle de Richter est un outil de mesure qui permet de définir la magnitude de moment d'un tremblement de terre. Cette échelle va de 1 à 9.
-            Créer une variable magnitude. Selon la valeur de magnitude, afficher la phrase correspondante.
+            Créer une variable et l'initialiser à 1.
+            Tant que cette variable n'atteint pas 10, il faut :<br>
+            - l'afficher<br>
+            - l'incrementer de la moitié de sa valeur<br>
         </p>
-        <table>
-            <thead>
-                <tr>
-                    <th scope="col">Magnitude</th>
-                    <th scope="col">Phrase</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td style="text-align: center;">1</td>
-                    <td>Micro-séisme impossible à ressentir.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">2</td>
-                    <td>Micro-séisme impossible à ressentir mais enregistrable par les sismomètres.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">3</td>
-                    <td>Ne cause pas de dégats mais commence à pouvoir être légèrement ressenti.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">4</td>
-                    <td>Séisme capable de faire bouger des objets mais ne causant généralement pas de dégats.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">5</td>
-                    <td>Séisme capable d'engendrer des dégats importants sur de vieux bâtiments ou bien des bâtiments présentants des défauts de construction. Peu de dégats sur des bâtiments modernes.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">6</td>
-                    <td>Fort séisme capable d'engendrer des destructions majeures sur une large distance (180 km) autour de l'épicentre.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">7</td>
-                    <td>Séisme capable de destructions majeures à modérées sur une très large zone en fonction de la distance.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">8</td>
-                    <td>Séisme capable de destructions majeures sur une très large zone de plusieurs centaines de kilomètres.</td>
-                </tr>
-                <tr>
-                    <td style="text-align: center;">9</td>
-                    <td>Séisme capable de tout détruire sur une très vaste zone.</td>
-                </tr>
-            </tbody>
-        </table>
         <h4>Execution : </h4>
         <p class='execution'>
             <?php
@@ -181,17 +124,20 @@
         <div class='code'>
             <h4> Code : </h4>
             <p>
-                <img src="./img/exe4.jpg" alt="code source sur vscode">
+                < ?php<br>
+                    $i = 1;<br>
+                    while($i < 10){<br>
+                        echo $i . ' ';<br>
+                        $i += $i/2;<br>
+                        }
             </p>
         </div>
     </div>
 
     <div id='5' class="exe">
         <h3>Exercice 5 :</h3>
-        <p>Traduire ce code avec des if et des else : <br>
-            < ?php <br>
-                echo ($gender != 'Homme') ? "C'est une développeuse !!!" : "C'est un développeur !!!"; <br>
-                ?>
+        <p>
+
         </p>
         <h4>Execution : </h4>
         <p class='execution'>
