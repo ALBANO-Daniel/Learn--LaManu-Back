@@ -1,5 +1,5 @@
 <?php
 
-for($i=0; $i <21; $i--){
-    echo 'C\'est presque bon.';
+for($i=20; $i >= 0; $i--){
+    echo 'C\'est presque bon. ';
 }

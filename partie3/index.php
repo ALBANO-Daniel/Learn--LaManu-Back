@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -163,9 +164,9 @@
             <h4> Code : </h4>
             <p>
                 < ?php<br>
-                    for($i=0; $i &lt;21; $i--){<br>
-                    echo 'C\'est presque bon.';<br>
-                    }
+                    for($i=20; $i >= 0; $i--){<br>
+                        echo 'C\'est presque bon.';<br>
+                        }
             </p><br>
         </div>
     </div>
@@ -182,8 +183,8 @@
         <div class='code'>
             <h4> Code : </h4>
             <p>
-                < ?php<br>
-                    for($i=1; $i >= 100; $i+=15){<br>
+                &lt;?php<br>
+                    for($i=1; $i <= 100; $i+=15){<br>
                     echo 'On tient le bon bout.';<br>
                     }
             </p>
