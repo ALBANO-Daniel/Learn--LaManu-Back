@@ -150,7 +150,7 @@
             <p>
                 &lt;?php<br>
                 $a = 1;<br>
-                $b = ', est une chaine de caracteres.';<br>
+                $b = ', et une chaine de caracteres.';<br>
                 function concat($x,$y){<br>
                 return $x.$y;<br>
                 }<br>

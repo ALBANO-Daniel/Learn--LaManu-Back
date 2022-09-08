@@ -3,7 +3,7 @@
 function ok(){
     return true;
 }
-if( ok() == true){
+if( ok() ){
     echo 'function returns true';
 };
 # ok() return 1, true

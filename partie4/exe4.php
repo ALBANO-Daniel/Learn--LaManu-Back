@@ -3,14 +3,18 @@
 $num1 = 15;
 $num2 = 10;
 
+
 function compareNumbers($a,$b){
+    $lecho = '';
     if($a>$b){
-        echo 'Le premier nombre est plus grand.';
+        $lecho = 'Le premier nombre est plus grand.';
     } else if($a<$b){
-        echo 'Le premier nombre est plus petit.';
+        $lecho = 'Le premier nombre est plus petit.';
     } else {
-        echo 'Les deux nombres sont identiques.';
+        $lecho = 'Les deux nombres sont identiques.';
     }
+    return $lecho;
 }
 
-echo compareNumbers($num1,$num2);
+$msg = compareNumbers($num1,$num2);
+echo $msg;
