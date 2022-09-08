@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>PHP partie 2</title>
 </head>
 
 <body>
     <nav>
-        <h2>exercices :</h2>
+        <button><a class="goBack" href="../"><<<<a></button>
+        <h2>Partie 2 - exercices :</h2>
         <ul id="exe-list">
             <li>1</li>
             <li>2</li>
@@ -21,12 +22,9 @@
             <li>6</li>
             <li>7</li>
             <li>8</li>
-            <!-- ADD NEW EXE HERE with same Syntax -->
+            
         </ul>
     </nav>
-
-
-    <!-- ADD NEW EXE HERE With same Syntax -->
     <div id='0' class="exe">
         <!-- hidden div just to help indexation ref. on the arrays functions -->
     </div>

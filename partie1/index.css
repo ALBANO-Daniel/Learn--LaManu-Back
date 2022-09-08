@@ -1,11 +1,28 @@
 body{
     background-color: aliceblue;
     font-size: 22px;
+    line-height: 2rem;
+}
+.goBack{
+    text-decoration: none;
+    color: #f2f2f2;
+}
+button{
+    background-color: #2f2f2f;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+nav{
+    border-bottom: #2f2f2f 1px solid;
+    width: 100%;
 }
 div{
     display: none;
     background-color: gainsboro;
     padding: 1rem;
+}
+img{
+    width: 100%;
 }
 #exe-list {
     text-decoration: none;

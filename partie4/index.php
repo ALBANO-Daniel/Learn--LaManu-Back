@@ -11,7 +11,8 @@
 
 <body>
     <nav>
-        <h2>exercices :</h2>
+    <button><a class="goBack" href="../"><<<<a></button>
+        <h2>Partie 4 - exercices :</h2>
         <ul id="exe-list">
             <li>1</li>
             <li>2</li>

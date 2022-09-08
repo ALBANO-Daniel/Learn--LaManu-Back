@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>PHP</title>
+    <title>PHP - Partie 1</title>
 </head>
 
 <body>
     <nav>
-        <h2>exercices</h2>
+        <button><a class="goBack" href="../"><<<<a></button>
+        <h2>Partie 1 - exercices :</h2>
         <ul id="exe-list">
             <li>1</li>
             <li>2</li>
