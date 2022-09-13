@@ -16,4 +16,12 @@ const highlightOnlySelectedElement = (elements, element) => {
         elements.forEach( el => el.style.background = 'none')
         element.style.background = 'grey'
 } 
+// not worked in PHP, php you better change the array of getdate() call
+
+// var fake_date = new Date("October 6, 2016 11:13:00");
+
+// //overriding date function
+// Date = function(){return fake_date;};
+// var new_date = new Date();
+// alert(new_date);
 
